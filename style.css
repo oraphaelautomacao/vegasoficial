@@ -34,7 +34,7 @@ html, body {
 /* HERO */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.6)), url("../img/ori-fundo1.jpeg") left/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.6)), url("./img/ori-fundo1.jpeg") left/cover no-repeat;
   display: flex;
   flex-direction: column;
 }
