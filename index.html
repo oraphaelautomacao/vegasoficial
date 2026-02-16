@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vega's Tabacco'n Beer | Bar, Drinks & Eventos em Araruama</title>
+
+    <meta
+      name="description"
+      content="O Vega's Tabacco'n Beer é o bar ideal em Araruama para curtir drinks especiais, boa música e eventos exclusivos em um ambiente aconchegante."
+    />
+
+    <!-- SEO -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://seudominio.com/" />
+
+    <!-- Open Graph (WhatsApp / Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vega's Tabacco'n Beer" />
+    <meta
+      property="og:description"
+      content="Drinks especiais, boa música e momentos inesquecíveis em Araruama."
+    />
+    <meta property="og:image" content="https://seudominio.com/img/og.jpg" />
+    <meta property="og:url" content="https://seudominio.com/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Performance -->
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <main class="hero">
+      <header class="header container">
+        <div class="logo">
+          <img src="img/logo.jpeg" alt="Logomarca Vega's Tabacco'n Beer" />
+        </div>
+
+        <!-- BOTÃO HAMBURGUER -->
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU -->
+        <nav class="nav">
+          <div class="nav-content">
+            <ul class="nav-bar">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#drinks">Drinks</a></li>
+              <li><a href="#events">Eventos</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero-section container">
+        <span class="hero-welcome">Bem-vindo ao</span>
+
+        <h1>
+          <strong>Vega's</strong><br />
+          Tabacco'n Beer
+        </h1>
+
+        <em>O lugar onde cada momento vira diversão e emoção!</em>
+
+        <button class="btn-primary">Explore Mais</button>
+      </section>
+    </main>
+
+    <section id="about" class="about section">
+      <div class="about-container container">
+        <div class="about-image">
+          <img
+            src="img/about/estabelecimento.jpg"
+            alt="Interior do Vega's Tabacco'n Beer"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="about-text">
+          <h2>Sobre o Vega's</h2>
+          <p>
+            No coração de Araruama, o <strong>Vega's Tabacco'n Beer</strong> é
+            mais do que um bar — é um ponto de encontro para quem valoriza boas
+            conversas, drinks bem preparados e momentos inesquecíveis.
+          </p>
+          <p>
+            Com um ambiente aconchegante, música envolvente e atendimento de
+            qualidade, cada visita se transforma em uma experiência única.
+          </p>
+
+          <a href="#gallery" class="btn-secondary">Ver Galeria</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section">
+      <div class="container stats-grid">
+        <div class="circle-counter" data-target="2">
+          <svg width="160" height="160">
+            <circle class="bg" cx="80" cy="80" r="70"></circle>
+            <circle class="progress" cx="80" cy="80" r="70"></circle>
+          </svg>
+          <span class="value">0</span>
+          <p>Anos de História</p>
+        </div>
+
+        <div class="circle-counter" data-target="99">
+          <svg width="160" height="160">
+            <circle class="bg" cx="80" cy="80" r="70"></circle>
+            <circle class="progress" cx="80" cy="80" r="70"></circle>
+          </svg>
+          <span class="value">0</span>
+          <p>Eventos Realizados</p>
+        </div>
+
+        <div class="circle-counter" data-target="3500">
+          <svg width="160" height="160">
+            <circle class="bg" cx="80" cy="80" r="70"></circle>
+            <circle class="progress" cx="80" cy="80" r="70"></circle>
+          </svg>
+          <span class="value">0</span>
+          <p>Drinks Servidos</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="drinks" class="section container">
+      <h2>Nossos Drinks Populares</h2>
+
+      <div class="drink-list">
+        <article class="drink-card">
+          <img src="img/drinks/gin.jpg" alt="Gin Tônica" loading="lazy" />
+          <div class="drink-info">
+            <h3>Gin Tônica</h3>
+            <span class="price">R$ 28,00</span>
+          </div>
+        </article>
+
+        <article class="drink-card">
+          <img src="img/drinks/whisky.jpg" alt="Whisky" loading="lazy" />
+          <div class="drink-info">
+            <h3>Whisky</h3>
+            <span class="price">R$ 35,00</span>
+          </div>
+        </article>
+
+        <article class="drink-card">
+          <img
+            src="img/drinks/beer.jpg"
+            alt="Cerveja Artesanal"
+            loading="lazy"
+          />
+          <div class="drink-info">
+            <h3>Cerveja Artesanal</h3>
+            <span class="price">R$ 18,00</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <h2>Galeria</h2>
+
+        <div class="gallery-grid">
+          <img src="img/gallery/1.jpg" alt="Ambiente do bar" loading="lazy" />
+          <img src="img/gallery/2.jpg" alt="Drinks especiais" loading="lazy" />
+          <img src="img/gallery/3.jpg" alt="Balcão do bar" loading="lazy" />
+          <img src="img/gallery/4.jpg" alt="Noite no Vega's" loading="lazy" />
+          <img
+            src="img/gallery/5.jpg"
+            alt="Detalhes do ambiente"
+            loading="lazy"
+          />
+          <img src="img/gallery/6.jpg" alt="Eventos e música" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-img" src="" alt="Imagem ampliada" />
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 Vega's Tabacco'n Beer • Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./js/script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BarOrPub",
+        "name": "Vega's Tabacco'n Beer",
+        "image": "https://seudominio.com/img/og.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Araruama",
+          "addressRegion": "RJ",
+          "addressCountry": "BR"
+        },
+        "servesCuisine": "Drinks, Cervejas, Whisky",
+        "priceRange": "$$",
+        "sameAs": []
+      }
+    </script>
+  </body>
+</html>
