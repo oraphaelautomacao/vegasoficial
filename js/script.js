@@ -22,11 +22,32 @@ if (menuToggle && nav && navContent) {
     body.classList.toggle("menu-open", !isOpen);
   };
 
+  // Toggle apenas no botão
   menuToggle.addEventListener("click", toggleMenu);
-  nav.addEventListener("click", closeMenu);
+
+  // Fecha ao clicar fora do conteúdo (somente mobile)
+  nav.addEventListener("click", (e) => {
+    if (window.innerWidth < 768 && e.target === nav) {
+      closeMenu();
+    }
+  });
+
+  // Evita fechar ao clicar no conteúdo
   navContent.addEventListener("click", (e) => e.stopPropagation());
-  links.forEach((link) => link.addEventListener("click", closeMenu));
+
+  // Fecha ao clicar em links
+  links.forEach((link) =>
+    link.addEventListener("click", closeMenu)
+  );
+
+  // Corrige estado ao redimensionar
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      closeMenu();
+    }
+  });
 }
+
 
 /* ===============================
    INTERSECTION OBSERVER (GENÉRICO)
