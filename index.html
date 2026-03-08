@@ -29,10 +29,14 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Performance -->
-    <link rel="preload" href="style.css" as="style" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="index.css" as="style" />
+    <link rel="stylesheet" href="index.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -55,9 +59,8 @@
             <ul class="nav-bar">
               <li><a href="#">Home</a></li>
               <li><a href="#about">Sobre</a></li>
-              <li><a href="#drinks">Drinks</a></li>
-              <li><a href="#events">Eventos</a></li>
-              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="./drinks.html">Drinks</a></li>
+              <li><a href="./gallery.html">Galeria</a></li>
               <li><a href="#">Contato</a></li>
             </ul>
           </div>
@@ -74,9 +77,44 @@
 
         <em>O lugar onde cada momento vira diversão e emoção!</em>
 
-        <a href="#drinks" class="btn-primary">Explore Mais</a>
+        <a href="./drinks.html" class="btn-primary">Conheça nossos Drinks</a>
+        <a href="#stats" class="see-more">
+          <p>Continue explorando</p>
+          <span class="arrow">⇊</span>
+        </a>
       </section>
     </main>
+
+    <section id="stats" class="stats">
+      <div class="container stats-grid">
+        <div class="circle-counter" data-target="2">
+          <svg>
+            <circle class="bg" cx="50" cy="50" r="35"></circle>
+            <circle class="progress" cx="50" cy="50" r="35"></circle>
+          </svg>
+          <span class="value">0</span>
+          <p>Anos de História</p>
+        </div>
+
+        <div class="circle-counter" data-target="99">
+          <svg>
+            <circle class="bg" cx="50" cy="50" r="35"></circle>
+            <circle class="progress" cx="50" cy="50" r="35"></circle>
+          </svg>
+          <span class="value">0</span>
+          <p>Eventos Realizados</p>
+        </div>
+
+        <div class="circle-counter" data-target="3500">
+          <svg>
+            <circle class="bg" cx="50" cy="50" r="35"></circle>
+            <circle class="progress" cx="50" cy="50" r="35"></circle>
+          </svg>
+          <span class="value">0</span>
+          <p>Drinks Servidos</p>
+        </div>
+      </div>
+    </section>
 
     <section id="about" class="about section">
       <div class="about-container container">
@@ -99,103 +137,59 @@
             Com um ambiente aconchegante, música envolvente e atendimento de
             qualidade, cada visita se transforma em uma experiência única.
           </p>
+          <a href="./gallery.html" class="btn-secondary">Ver Galeria</a>
 
-          <a href="#gallery" class="btn-secondary">Ver Galeria</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats section">
-      <div class="container stats-grid">
-        <div class="circle-counter" data-target="2">
-          <svg width="160" height="160">
-            <circle class="bg" cx="80" cy="80" r="70"></circle>
-            <circle class="progress" cx="80" cy="80" r="70"></circle>
-          </svg>
-          <span class="value">0</span>
-          <p>Anos de História</p>
-        </div>
-
-        <div class="circle-counter" data-target="99">
-          <svg width="160" height="160">
-            <circle class="bg" cx="80" cy="80" r="70"></circle>
-            <circle class="progress" cx="80" cy="80" r="70"></circle>
-          </svg>
-          <span class="value">0</span>
-          <p>Eventos Realizados</p>
-        </div>
-
-        <div class="circle-counter" data-target="3500">
-          <svg width="160" height="160">
-            <circle class="bg" cx="80" cy="80" r="70"></circle>
-            <circle class="progress" cx="80" cy="80" r="70"></circle>
-          </svg>
-          <span class="value">0</span>
-          <p>Drinks Servidos</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="drinks" class="section container">
-      <h2>Nossos Drinks Populares</h2>
-
-      <div class="drink-list">
-        <article class="drink-card">
-          <img src="img/drinks/gin.webp" alt="Gin Tônica" loading="lazy" />
-          <div class="drink-info">
-            <h3>Gin Tônica</h3>
-            <span class="price">R$ 28,00</span>
+          <div class="arrow-bottom">
+            <img
+              src="./img/seta.png"
+              alt="seta para continuar a rolagem"
+              srcset=""
+            />
           </div>
-        </article>
-
-        <article class="drink-card">
-          <img src="img/drinks/whisky.webp" alt="Whisky" loading="lazy" />
-          <div class="drink-info">
-            <h3>Whisky</h3>
-            <span class="price">R$ 35,00</span>
-          </div>
-        </article>
-
-        <article class="drink-card">
-          <img
-            src="img/drinks/beer.webp"
-            alt="Cerveja Artesanal"
-            loading="lazy"
-          />
-          <div class="drink-info">
-            <h3>Cerveja Artesanal</h3>
-            <span class="price">R$ 18,00</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="gallery" class="gallery section">
-      <div class="container">
-        <h2>Galeria</h2>
-
-        <div class="gallery-grid">
-          <img src="img/gallery/1.webp" alt="Ambiente do bar" loading="lazy" />
-          <img src="img/gallery/2.webp" alt="Drinks especiais" loading="lazy" />
-          <img src="img/gallery/3.webp" alt="Balcão do bar" loading="lazy" />
-          <img src="img/gallery/4.webp" alt="Noite no Vega's" loading="lazy" />
-          <img
-            src="img/gallery/5.webp"
-            alt="Detalhes do ambiente"
-            loading="lazy"
-          />
-          <img src="img/gallery/6.webp" alt="Eventos e música" loading="lazy" />
         </div>
       </div>
     </section>
 
-    <!-- LIGHTBOX -->
-    <div class="lightbox">
-      <span class="lightbox-close">&times;</span>
-      <img class="lightbox-img" src="" alt="Imagem ampliada" />
-    </div>
+    <section class="section">
+      <div class="container location">
+        <div class="location-text">
+          <h2>Nossa Localização</h2>
+          <p>
+            Estamos localizados no coração de Araruama, prontos para receber
+            você!
+          </p>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d795.4189011190273!2d-42.34079773680334!3d-22.878027751675283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97691640627431%3A0x97831babbc202e8c!2sR.%20Valdemar%20da%20S%20Rocha%2C%2055%20-%20Alto%20da%20Boa%20Vista%2C%20Araruama%20-%20RJ%2C%2028979-285!5e0!3m2!1spt-BR!2sbr!4v1772999882398!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div class="location-text">
+          <p>Funcionamento de terça a domingo das 19h20 às 4h20</p>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
+      <div class="social">
+        <a href="https://instagram.com/_vegasofc" target="_blank">
+          <i class="fab fa-instagram" style="color: #e1306c"
+            ><span>Instagram</span></i
+          >
+        </a>
+        <a href="https://wa.me/5522997913180" target="_blank">
+          <i class="fab fa-whatsapp" style="color: #25d366"
+            ><span>WhatsApp</span></i
+          >
+        </a>
+      </div>
+
       <p>© 2026 Vega's Tabacco'n Beer • Todos os direitos reservados</p>
     </footer>
 
