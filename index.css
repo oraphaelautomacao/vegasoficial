@@ -33,7 +33,7 @@ body {
 
 .section {
   padding: 60px 20px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 p {
@@ -100,6 +100,7 @@ p {
   justify-content: center;
   text-align: center;
   color: var(--light);
+  position: relative;
 }
 
 .hero-welcome {
@@ -123,8 +124,9 @@ p {
 }
 
 .hero-section .see-more {
-  position: relative;
-  top: 200px;
+  position: absolute;
+  bottom: 0px;
+  align-self: center;
 animation: sobeDesce 1.2s ease-in-out infinite alternate;
 text-decoration: none;
 color: var(--light);
@@ -140,7 +142,7 @@ color: var(--light);
 }
 
 .hero-section p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 30px;
 }
 
@@ -219,7 +221,6 @@ color: var(--light);
 /* ABOUT */
 #about,
 .about {
-  /* background: #f4f4f4; */
   color: var(--light);
   display: flex;
 }
@@ -257,6 +258,7 @@ color: var(--light);
 }
 
 .about-text {
+  position: relative;
   max-width: 520px;
   opacity: 0;
   transform: translateY(40px);
@@ -283,11 +285,17 @@ color: var(--light);
 }
 
 .about .arrow-bottom {
-  display: flex;
-  justify-content: center;
-  margin: 50px 0;
-  padding: 30px;
+  position: absolute;
+  bottom: -80px;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 30px;
  animation: sobeDesce 1.2s ease-in-out infinite alternate;
+}
+
+.about .arrow-bottom img {
+ display: flex;
+  margin: auto;
 }
 
 
@@ -295,7 +303,7 @@ color: var(--light);
 .stats {
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 40px 0px;
 
 }
 
@@ -360,7 +368,7 @@ body.dark circle.bg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  padding: 0 20px;
 } 
 
 .location-text {
@@ -375,7 +383,7 @@ body.dark circle.bg {
 }
 
 .location iframe {
-  margin: 5px auto 40px;
+  margin: 10px auto 40px;
   border-radius: 20px;
 }
 
